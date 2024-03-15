@@ -37,9 +37,7 @@ class HardWork {
     // }
 
     for (let i = 0; i < this._tasks.length; i++) {
-      setTimeout(() => {
-        this._tasks[i]();
-      }, 0);
+      setTimeout(this._tasks[i], 0);
     }
   }
 
